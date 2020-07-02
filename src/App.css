@@ -1,0 +1,16 @@
+html, body {
+    background-color: #c2d1b9;
+    color: #1e2e21;
+    font-family: LibreFranklin;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'LibreFranklin';
+    src: local('LibreFranklin'), url('../src/fonts/LibreFranklin.ttf');
+}

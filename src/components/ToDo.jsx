@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './ToDo.css';
 
 export class ToDo extends Component {
     constructor(props) {
@@ -35,41 +36,50 @@ export class ToDo extends Component {
     deleteIdea(id){
         const list = [...this.state.list];
 
-        const updatedList = list.filter(idea => idea.id != id);
+        const updatedList = list.filter(idea => idea.id !== id);
 
         this.setState({list: updatedList});
     }
 
     render() {
         return (
-            <>
-                <h1>How you want help the Earth</h1>
-                <label> Add idea
-                    <input
+            <div className='container'>
+                <div className='container__header'>
+                    <h1>How you want help</h1> 
+                    <h2>the Earth?</h2>
+                </div>
+                <div className='container__addIdea'>
+                    <div className='container__addIdea__input'>
+                        <label>Add idea</label>
+                        <input
                             type="text"
                             placeholder="Type idea here..."
                             value={this.state.newIdea}
                             onChange={event => this.updateInput("newIdea", event.target.value)}
-                    />
-                </label>
-                <button onClick={() => this.addIdea()}>
-                    Add idea
-                </button>
-                <ul>
-                    {this.state.list.map(idea => {
-                        return (
-                            <li key={idea.id}>
-                                {idea.value}
-                                <button 
-                                    onClick={() => this.deleteIdea(idea.id)}
-                                >
-                                    X
-                                </button>
-                            </li>
-                        )
-                    })}
-                </ul>
-            </>
+                        />
+                    </div>
+                    <button onClick={() => this.addIdea()}>
+                        Add
+                    </button>
+                </div>
+                <div className='userIdeas'>
+                    <h3>For help the Earth I will...</h3>
+                    <ul className='userIdeas__list'>
+                        {this.state.list.map(idea => {
+                            return (
+                                <li key={idea.id}>
+                                    {idea.value}
+                                    <button 
+                                        onClick={() => this.deleteIdea(idea.id)}
+                                    >
+                                        X
+                                    </button>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                </div>
+            </div>
         );
     }
 }
