@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/help_earth/static/css/main.7c423019.chunk.css",
+    "main.js": "/help_earth/static/js/main.69b141ea.chunk.js",
+    "main.js.map": "/help_earth/static/js/main.69b141ea.chunk.js.map",
+    "runtime-main.js": "/help_earth/static/js/runtime-main.a93b2a3a.js",
+    "runtime-main.js.map": "/help_earth/static/js/runtime-main.a93b2a3a.js.map",
+    "static/js/2.92cfb98d.chunk.js": "/help_earth/static/js/2.92cfb98d.chunk.js",
+    "static/js/2.92cfb98d.chunk.js.map": "/help_earth/static/js/2.92cfb98d.chunk.js.map",
+    "index.html": "/help_earth/index.html",
+    "precache-manifest.95df7f0170cb51b2cbbeb85b5003730b.js": "/help_earth/precache-manifest.95df7f0170cb51b2cbbeb85b5003730b.js",
+    "service-worker.js": "/help_earth/service-worker.js",
+    "static/css/main.7c423019.chunk.css.map": "/help_earth/static/css/main.7c423019.chunk.css.map",
+    "static/js/2.92cfb98d.chunk.js.LICENSE.txt": "/help_earth/static/js/2.92cfb98d.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/help_earth/static/media/LibreFranklin.817fb321.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a93b2a3a.js",
+    "static/js/2.92cfb98d.chunk.js",
+    "static/css/main.7c423019.chunk.css",
+    "static/js/main.69b141ea.chunk.js"
+  ]
+}
